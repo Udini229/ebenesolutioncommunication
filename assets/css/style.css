@@ -4416,7 +4416,7 @@ ul:not(.cs-mega_wrapper)
 }
 
 .cs-text_widget img + p {
-  margin-top: 30px;
+  margin-top:0px;
 }
 
 .cs-social_btns.cs-style1 {
