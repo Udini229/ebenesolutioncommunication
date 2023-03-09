@@ -42,31 +42,15 @@ html {
   background-color: #181818;
 }
 
-.cs-partner_logo:hover{
-	transform: scale(2);
-	animation: pulse 2s infinite;
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
 }
-
-@keyframes pulse {
-	0% {
-		transform: scale(0.95);
-		/* box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7); */
-	}
-
-	70% {
-		transform: scale(1.5);
-		/* box-shadow: 0 0 0 10px rgba(0, 0, 0, 0); */
-	}
-
-	100% {
-		transform: scale(0.95);
-		/* box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); */
-	}
-}
-
-
-
-
 
 h1,
 h2,
@@ -1459,8 +1443,30 @@ label {
   margin: 0 -20px;
 }
 
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		/*box-shadow: 0 0 0 0 #dd6e3c;*/
+	}
+
+	70% {
+		transform: scale(1.5);
+		/*box-shadow: 0 0 0 10px #dd6e3c;*/
+	}
+
+	100% {
+		transform: scale(0.95);
+		/*box-shadow: 0 0 0 0 #dd6e3c;*/
+	}
+}
+
 .cs-partner_logo {
   padding: 20px;
+}
+
+.cs-partner_logo:hover{
+  transform: scale(1);
+	animation: pulse 2s infinite;
 }
 
 .cs-moving_text_wrap {
@@ -3940,9 +3946,8 @@ label {
 }
 
 .cs-site_branding img {
-  /* max-height: 45px; */
-  width:120px;
-  height:120px; 
+  height: 150px;
+  width: 150px;
 }
 
 @media screen and (min-width: 1200px) {
